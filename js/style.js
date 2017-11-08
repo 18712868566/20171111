@@ -1,0 +1,88 @@
+$(function(){
+
+    $('.list .links').hover(function(){
+        $(this).find('.before').stop().animate({
+            'left':'70',
+            'opacity':'1'
+        },300)
+    },function(){
+        $(this).find('.before').stop().animate({
+            'left':'150',
+            'opacity':'0'
+        },100,function(){
+            $(this).stop(true).animate({'left':'-135'},0)
+        })
+    })
+
+
+    /*$('.list').not('.active').hover(function(){
+        $('.active').trigger('ani_hide')
+        var _index = $(this).index();
+        $('.list').each(function(index, value){
+            $(this).removeClass('Ani_'+index);
+        })
+        $(this).addClass('Ani_'+_index);
+
+    },function(){
+        var _index = $(this).index();
+        $('.list').each(function(index, value){
+            $(this).addClass('Ani_'+index);
+        })
+    });
+
+
+    $('.active').on('ani_show',function(){
+        $(this).find('.before').stop().animate({
+            'left':'68',
+            'opacity':'1'
+        },800)
+    });
+    $('.active').on('ani_hide',function(){
+        $(this).find('.before').stop().animate({
+            'left':'150',
+            'opacity':'0'
+        },300,function(){
+            $(this).stop(true).animate({'left':'-135'},0)
+        })
+    });
+
+    $('.active').trigger('ani_show')*/
+
+
+
+    var oDiv = $('.pos_left,.pos_right');
+    if ($(window).width()>=1779) {
+        oDiv.fadeIn();
+    } else {
+        oDiv.fadeOut();
+    }
+})
+
+
+$(window).on('mousemove', function(e) {
+    var w = $(window).width();
+    var h = $(window).height();
+    var offsetX = 0.1 - e.pageX / w;
+    var offsetY = 0.1 - e.pageY / h;
+
+    $(".parallax").each(function(i, el) {
+        var offset = parseInt($(el).data('offset'));
+        var translate = "translate3d(" + Math.round(offsetX * offset) + "px," + Math.round(offsetY * offset) + "px, 0px)";
+
+        $(el).css({
+            '-webkit-transform': translate,
+            'transform': translate,
+            'moz-transform': translate
+        });
+    });
+});
+
+
+$(window).resize(function(event) {
+    var oDiv = $('.pos_left,.pos_right');
+    if ($(window).width()>=1779) {
+        oDiv.fadeIn();
+    } else {
+        oDiv.fadeOut();
+    }
+});

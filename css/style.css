@@ -1,0 +1,308 @@
+/* CSS Document */
+@charset "utf-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, tr, td { margin: 0; padding: 0; font-size: 12px; }
+body { margin: 0; padding: 0; font-family: '微软雅黑', "宋体", Times, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; position: relative; _overflow-x: hidden; background: #090705; color: #fff; }
+table { border-collapse: collapse; border-spacing: 0; }
+fieldset, img { border: 0; margin: 0; padding: 0; border: none; display: block; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style: normal; font-weight: normal }
+caption, th, td { text-align: center }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal }
+* { margin: 0; padding: 0; zoom: 1; }
+ul, li, ol { list-style: none outside; padding: 0; margin: 0; }
+a { color: #666; outline: none; cursor: pointer; text-decoration: none; overflow: hidden; }
+a:hover { text-decoration: none; }
+strong, em, i, b { font-style: normal; }
+*html { background-image: url(about:blank); background-attachment: fixed; /*解决ie6下 层的闪动*/ }
+a { outline: none; text-decoration: none; color: #d0f1f1; }
+a:hover { text-decoration: none; }
+a:active { star: expression(this.onFocus=this.blur()); }
+.clearfloat:after { clear: both; content: ""; display: block; height: 0; visibility: hidden; }
+::-ms-clear { display: none; }
+::-ms-reveal { display: none; }
+.disabled { pointer-events: none; }
+
+/*点击禁用*/
+.chromeframe { background: #fff9d4; color: #000; padding: 10px 0; text-align: center; width: 100%; margin: 0 auto; min-width: 1100px; border-bottom: 1px solid #000; font-size: 14px; }
+.chromeframe a { color: red; }
+.ridius { -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+input::-webkit-input-placeholder { color: #ccc; font-size: 14px; text-align: left }
+::-webkit-input-placeholder { color: #ccc }
+:-moz-placeholder { color: #ccc }
+::-moz-placeholder { color: #ccc }
+:-ms-input-placeholder { color: #ccc }
+.fl { float: left; }
+.fr { float: right; }
+.pos{position: absolute;top: 0;}
+.btn{display: block;}
+
+.w_1200 { width: 1280px; position: relative; overflow: hidden; margin: 0 auto; }
+#wrapper { background: url(../image/bg.jpg) no-repeat center 0; width: 100%; height: 1200px; overflow: hidden;position: relative;}
+.logo { position: absolute; top: 0; left: 0 }
+.spriteimg { background: url(../image/ani.png) no-repeat; }
+.aniwrap { width: 1280px; height: 560px; margin-top: 378px; position: relative; overflow: hidden; }
+.list { height: 560px; width: 320px; float: left; position: relative; cursor: pointer;}
+.links .before { display: block; position: absolute; width: 158px; height: 133px; background: url(../image/GO.png) no-repeat 0 0; top: -25px; left: -135px; opacity: 0; filter: alpha(opacity=0); }
+.links { display: block; position: absolute; width: 230px; height: 440px; top: 105px; text-align: center; font-size: 32px; color: #fff; line-height: 440px; text-indent: -999em; }
+.lk1 { left: 50px; }
+.lk2 { left: 5px; }
+.lk3 { left: 85px; }
+.lk4 { left: 28px; }
+.bg_pos1 { background-position: 0 0; }
+.bg_pos2 { background-position: -320px 0; }
+.bg_pos3 { background-position: -640px 0; }
+.bg_pos4 { background-position: -960px 0; }
+.Ani_0 { -webkit-animation: firstAni 4s steps(1, start) alternate infinite; animation: firstAni 4s steps(1, start) alternate infinite; }
+.Ani_1 { -webkit-animation: secondAni 4s steps(1, start) alternate infinite; animation: secondAni 4s steps(1, start) alternate infinite; }
+.Ani_2 { -webkit-animation: thirdAni 4s steps(1, start) alternate infinite; animation: thirdAni 4s steps(1, start) alternate infinite; }
+.Ani_3 { -webkit-animation: fourthAni 4s steps(1, start) alternate infinite; animation: fourthAni 4s steps(1, start) alternate infinite; }
+@keyframes firstAni {
+    0% { background-position: 0 0; }
+    4% { background-position: 0 -560px; }
+    8% { background-position: 0 -1120px; }
+    12% { background-position: 0 -1680px; }
+    16% { background-position: 0 -2240px; }
+    20% { background-position: 0 -2800px; }
+    24% { background-position: 0 -3360px; }
+    28% { background-position: 0 -3920px; }
+    32% { background-position: 0 -4480px; }
+    36% { background-position: 0 -5040px; }
+    40% { background-position: 0 -5600px; }
+    43% { background-position: 0 -6160px; }
+    46% { background-position: 0 -6720px; }
+    49% { background-position: 0 -7280px; }
+    50% { background-position: 0 -7840px; }
+    51% { background-position: 0 -7280px; }
+    55% { background-position: 0 -6720px; }
+    59% { background-position: 0 -6160px; }
+    63% { background-position: 0 -5600px; }
+    67% { background-position: 0 -5040px; }
+    71% { background-position: 0 -4480px; }
+    75% { background-position: 0 -3920px; }
+    79% { background-position: 0 -3360px; }
+    83% { background-position: 0 -2800px; }
+    88% { background-position: 0 -2240px; }
+    92% { background-position: 0 -1680px; }
+    96% { background-position: 0 -1120px; }
+    98% { background-position: 0 -560px; }
+    100% { background-position: 0 0; }
+}
+@-webkit-keyframes firstAni {
+    0% { background-position: 0 0; }
+    4% { background-position: 0 -560px; }
+    8% { background-position: 0 -1120px; }
+    12% { background-position: 0 -1680px; }
+    16% { background-position: 0 -2240px; }
+    20% { background-position: 0 -2800px; }
+    24% { background-position: 0 -3360px; }
+    28% { background-position: 0 -3920px; }
+    32% { background-position: 0 -4480px; }
+    36% { background-position: 0 -5040px; }
+    40% { background-position: 0 -5600px; }
+    43% { background-position: 0 -6160px; }
+    46% { background-position: 0 -6720px; }
+    49% { background-position: 0 -7280px; }
+    50% { background-position: 0 -7840px; }
+    51% { background-position: 0 -7280px; }
+    55% { background-position: 0 -6720px; }
+    59% { background-position: 0 -6160px; }
+    63% { background-position: 0 -5600px; }
+    67% { background-position: 0 -5040px; }
+    71% { background-position: 0 -4480px; }
+    75% { background-position: 0 -3920px; }
+    79% { background-position: 0 -3360px; }
+    83% { background-position: 0 -2800px; }
+    88% { background-position: 0 -2240px; }
+    92% { background-position: 0 -1680px; }
+    96% { background-position: 0 -1120px; }
+    98% { background-position: 0 -560px; }
+    100% { background-position: 0 0; }
+}
+@keyframes secondAni {
+    0% { background-position: -320px 0; }
+    4% { background-position: -320px -560px; }
+    8% { background-position: -320px -1120px; }
+    12% { background-position: -320px -1680px; }
+    16% { background-position: -320px -2240px; }
+    20% { background-position: -320px -2800px; }
+    24% { background-position: -320px -3360px; }
+    28% { background-position: -320px -3920px; }
+    32% { background-position: -320px -4480px; }
+    36% { background-position: -320px -5040px; }
+    40% { background-position: -320px -5600px; }
+    43% { background-position: -320px -6160px; }
+    46% { background-position: -320px -6720px; }
+    49% { background-position: -320px -7280px; }
+    50% { background-position: -320px -7840px; }
+    51% { background-position: -320px -7280px; }
+    55% { background-position: -320px -6720px; }
+    59% { background-position: -320px -6160px; }
+    63% { background-position: -320px -5600px; }
+    67% { background-position: -320px -5040px; }
+    71% { background-position: -320px -4480px; }
+    75% { background-position: -320px -3920px; }
+    79% { background-position: -320px -3360px; }
+    83% { background-position: -320px -2800px; }
+    88% { background-position: -320px -2240px; }
+    92% { background-position: -320px -1680px; }
+    96% { background-position: -320px -1120px; }
+    98% { background-position: -320px -560px; }
+    100% { background-position: -320px 0; }
+}
+@-webkit-keyframes secondAni {
+    0% { background-position: -320px 0; }
+    4% { background-position: -320px -560px; }
+    8% { background-position: -320px -1120px; }
+    12% { background-position: -320px -1680px; }
+    16% { background-position: -320px -2240px; }
+    20% { background-position: -320px -2800px; }
+    24% { background-position: -320px -3360px; }
+    28% { background-position: -320px -3920px; }
+    32% { background-position: -320px -4480px; }
+    36% { background-position: -320px -5040px; }
+    40% { background-position: -320px -5600px; }
+    43% { background-position: -320px -6160px; }
+    46% { background-position: -320px -6720px; }
+    49% { background-position: -320px -7280px; }
+    50% { background-position: -320px -7840px; }
+    51% { background-position: -320px -7280px; }
+    55% { background-position: -320px -6720px; }
+    59% { background-position: -320px -6160px; }
+    63% { background-position: -320px -5600px; }
+    67% { background-position: -320px -5040px; }
+    71% { background-position: -320px -4480px; }
+    75% { background-position: -320px -3920px; }
+    79% { background-position: -320px -3360px; }
+    83% { background-position: -320px -2800px; }
+    88% { background-position: -320px -2240px; }
+    92% { background-position: -320px -1680px; }
+    96% { background-position: -320px -1120px; }
+    98% { background-position: -320px -560px; }
+    100% { background-position: -320px 0; }
+}
+@keyframes thirdAni {
+    0% { background-position: -640px 0; }
+    4% { background-position: -640px -560px; }
+    8% { background-position: -640px -1120px; }
+    12% { background-position: -640px -1680px; }
+    16% { background-position: -640px -2240px; }
+    20% { background-position: -640px -2800px; }
+    24% { background-position: -640px -3360px; }
+    28% { background-position: -640px -3920px; }
+    32% { background-position: -640px -4480px; }
+    36% { background-position: -640px -5040px; }
+    40% { background-position: -640px -5600px; }
+    43% { background-position: -640px -6160px; }
+    46% { background-position: -640px -6720px; }
+    49% { background-position: -640px -7280px; }
+    50% { background-position: -640px -7840px; }
+    51% { background-position: -640px -7280px; }
+    55% { background-position: -640px -6720px; }
+    59% { background-position: -640px -6160px; }
+    63% { background-position: -640px -5600px; }
+    67% { background-position: -640px -5040px; }
+    71% { background-position: -640px -4480px; }
+    75% { background-position: -640px -3920px; }
+    79% { background-position: -640px -3360px; }
+    83% { background-position: -640px -2800px; }
+    88% { background-position: -640px -2240px; }
+    92% { background-position: -640px -1680px; }
+    96% { background-position: -640px -1120px; }
+    98% { background-position: -640px -560px; }
+    100% { background-position: -640px 0; }
+}
+@-webkit-keyframes thirdAni {
+    0% { background-position: -640px 0; }
+    4% { background-position: -640px -560px; }
+    8% { background-position: -640px -1120px; }
+    12% { background-position: -640px -1680px; }
+    16% { background-position: -640px -2240px; }
+    20% { background-position: -640px -2800px; }
+    24% { background-position: -640px -3360px; }
+    28% { background-position: -640px -3920px; }
+    32% { background-position: -640px -4480px; }
+    36% { background-position: -640px -5040px; }
+    40% { background-position: -640px -5600px; }
+    43% { background-position: -640px -6160px; }
+    46% { background-position: -640px -6720px; }
+    49% { background-position: -640px -7280px; }
+    50% { background-position: -640px -7840px; }
+    51% { background-position: -640px -7280px; }
+    55% { background-position: -640px -6720px; }
+    59% { background-position: -640px -6160px; }
+    63% { background-position: -640px -5600px; }
+    67% { background-position: -640px -5040px; }
+    71% { background-position: -640px -4480px; }
+    75% { background-position: -640px -3920px; }
+    79% { background-position: -640px -3360px; }
+    83% { background-position: -640px -2800px; }
+    88% { background-position: -640px -2240px; }
+    92% { background-position: -640px -1680px; }
+    96% { background-position: -640px -1120px; }
+    98% { background-position: -640px -560px; }
+    100% { background-position: -640px 0; }
+}
+@keyframes fourthAni {
+    0% { background-position: -960px 0; }
+    4% { background-position: -960px -560px; }
+    8% { background-position: -960px -1120px; }
+    12% { background-position: -960px -1680px; }
+    16% { background-position: -960px -2240px; }
+    20% { background-position: -960px -2800px; }
+    24% { background-position: -960px -3360px; }
+    28% { background-position: -960px -3920px; }
+    32% { background-position: -960px -4480px; }
+    36% { background-position: -960px -5040px; }
+    40% { background-position: -960px -5600px; }
+    43% { background-position: -960px -6160px; }
+    46% { background-position: -960px -6720px; }
+    49% { background-position: -960px -7280px; }
+    50% { background-position: -960px -7840px; }
+    51% { background-position: -960px -7280px; }
+    55% { background-position: -960px -6720px; }
+    59% { background-position: -960px -6160px; }
+    63% { background-position: -960px -5600px; }
+    67% { background-position: -960px -5040px; }
+    71% { background-position: -960px -4480px; }
+    75% { background-position: -960px -3920px; }
+    79% { background-position: -960px -3360px; }
+    83% { background-position: -960px -2800px; }
+    88% { background-position: -960px -2240px; }
+    92% { background-position: -960px -1680px; }
+    96% { background-position: -960px -1120px; }
+    98% { background-position: -960px -560px; }
+    100% { background-position: -960px 0; }
+}
+@-webkit-keyframes fourthAni {
+    0% { background-position: -960px 0; }
+    4% { background-position: -960px -560px; }
+    8% { background-position: -960px -1120px; }
+    12% { background-position: -960px -1680px; }
+    16% { background-position: -960px -2240px; }
+    20% { background-position: -960px -2800px; }
+    24% { background-position: -960px -3360px; }
+    28% { background-position: -960px -3920px; }
+    32% { background-position: -960px -4480px; }
+    36% { background-position: -960px -5040px; }
+    40% { background-position: -960px -5600px; }
+    43% { background-position: -960px -6160px; }
+    46% { background-position: -960px -6720px; }
+    49% { background-position: -960px -7280px; }
+    50% { background-position: -960px -7840px; }
+    51% { background-position: -960px -7280px; }
+    55% { background-position: -960px -6720px; }
+    59% { background-position: -960px -6160px; }
+    63% { background-position: -960px -5600px; }
+    67% { background-position: -960px -5040px; }
+    71% { background-position: -960px -4480px; }
+    75% { background-position: -960px -3920px; }
+    79% { background-position: -960px -3360px; }
+    83% { background-position: -960px -2800px; }
+    88% { background-position: -960px -2240px; }
+    92% { background-position: -960px -1680px; }
+    96% { background-position: -960px -1120px; }
+    98% { background-position: -960px -560px; }
+    100% { background-position: -960px 0; }
+}
+
+.pos_left{left: 0;width:366px;height: 600%; display: none;}
+.pos_right{right: 0;width:366px;height: 600%;display: none;}
